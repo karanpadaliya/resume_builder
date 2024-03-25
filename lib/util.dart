@@ -44,7 +44,7 @@ List<Map> buildOption = [
   {
     "icon": "experience.png",
     "name": "Achievements",
-    "page": "personalDetails",
+    "page": "achievement",
   },
   {
     "icon": "handshake.png",

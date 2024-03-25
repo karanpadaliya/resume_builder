@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resume_builder/achievement.dart';
 import 'package:resume_builder/carrier_objective.dart';
 import 'package:resume_builder/contact_page.dart';
 import 'package:resume_builder/eduction.dart';
@@ -35,6 +36,7 @@ class _MyAppState extends State<MyApp> {
         "eduction": (context) => Eduction(),
         "experiences": (context) => Experiences(),
         "technicalSkill": (context) => TechnicalSkills(),
+        "achievement": (context) => Achievement(),
 
 
       },
