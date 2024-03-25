@@ -6,6 +6,7 @@ import 'package:resume_builder/experiences.dart';
 import 'package:resume_builder/home_page.dart';
 import 'package:resume_builder/personal_details.dart';
 import 'package:resume_builder/splash_screen.dart';
+import 'package:resume_builder/technical_skills.dart';
 
 void main() {
   runApp(MyApp());
@@ -33,6 +34,7 @@ class _MyAppState extends State<MyApp> {
         "carrierObjective": (context) => CarrierObjective(),
         "eduction": (context) => Eduction(),
         "experiences": (context) => Experiences(),
+        "technicalSkill": (context) => TechnicalSkills(),
 
 
       },
