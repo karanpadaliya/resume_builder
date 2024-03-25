@@ -144,19 +144,77 @@ class _ExperiencesState extends State<Experiences> {
                                   child: Text(
                                     "Perviously Employeed",
                                     style: TextStyle(
-                                      fontSize: 13,
+                                      fontSize: 12,
                                     ),
                                   ),
                                 ),
-                                SizedBox(width: 20,),
+                                SizedBox(
+                                  width: 20,
+                                ),
                                 Container(
-                                  child: Text("Currently Employeed",style: TextStyle(
-                                    fontSize: 13,
-
-                                  ),),
+                                  child: Text(
+                                    "Currently Employeed",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
+                          ),
+                          Divider(),
+                          Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Text("Date Joined"),
+                                  Container(
+                                    height: 40,
+                                    width: 130,
+                                    child: Center(
+                                      child: Text(
+                                        "DD/MM/YYYY",
+                                        style: TextStyle(
+                                          color: Colors.black.withOpacity(0.5),
+                                        ),
+                                      ),
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      border: Border.all(
+                                        color: Color(0xff674aef),
+                                        width: 1,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(width: 40,),
+                              Column(
+                                children: [
+                                  Text("Date Exit"),
+                                  Container(
+                                    height: 40,
+                                    width: 130,
+                                    child: Center(
+                                      child: Text(
+                                        "DD/MM/YYYY",
+                                        style: TextStyle(
+                                          color: Colors.black.withOpacity(0.5),
+                                        ),
+                                      ),
+                                    ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      border: Border.all(
+                                        color: Color(0xff674aef),
+                                        width: 1,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
                           ),
                         ],
                       ),
