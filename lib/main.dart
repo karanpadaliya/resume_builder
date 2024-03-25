@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:resume_builder/carrier_objective.dart';
 import 'package:resume_builder/contact_page.dart';
+import 'package:resume_builder/eduction.dart';
+import 'package:resume_builder/experiences.dart';
 import 'package:resume_builder/home_page.dart';
 import 'package:resume_builder/personal_details.dart';
 import 'package:resume_builder/splash_screen.dart';
@@ -26,7 +29,12 @@ class _MyAppState extends State<MyApp> {
         "/": (context) => SplashScreen(),
         "home": (context) => HomePage(),
         "contactInfo": (context) => ContactPage(),
-        "personalDetails": (context) => PersonalDetails()
+        "personalDetails": (context) => PersonalDetails(),
+        "carrierObjective": (context) => CarrierObjective(),
+        "eduction": (context) => Eduction(),
+        "experiences": (context) => Experiences(),
+
+
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(

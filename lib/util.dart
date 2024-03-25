@@ -9,7 +9,7 @@ List<Map> buildOption = [
   {
     "icon": "briefcase.png",
     "name": "Carrier Objective",
-    "page": "personalDetails",
+    "page": "carrierObjective",
   },
   {
     "icon": "user.png",
@@ -19,12 +19,12 @@ List<Map> buildOption = [
   {
     "icon": "mortarboard.png",
     "name": "Eduction",
-    "page": "personalDetails",
+    "page": "eduction",
   },
   {
     "icon": "thinking.png",
     "name": "Experiences",
-    "page": "personalDetails",
+    "page": "experiences",
   },
   {
     "icon": "open-cardboard-box.png",

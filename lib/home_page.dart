@@ -23,6 +23,13 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Color(0xff674aef),
         iconTheme: IconThemeData(color: Colors.white),
+        title: Text(
+          "Resume Builder",
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
       ),
       drawer: Drawer(
         child: Column(
@@ -100,7 +107,10 @@ class _HomePageState extends State<HomePage> {
                   Divider(),
                   Row(
                     children: [
-                      Icon(Icons.feedback_rounded,color: Colors.black.withOpacity(0.6),),
+                      Icon(
+                        Icons.feedback_rounded,
+                        color: Colors.black.withOpacity(0.6),
+                      ),
                       SizedBox(
                         width: 20,
                       ),
@@ -117,6 +127,35 @@ class _HomePageState extends State<HomePage> {
               ),
             )
           ],
+        ),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              "images/icons/open_box.png",
+              width: 70,
+            ),
+            Container(
+              child: Text(
+                "No Resume + Create New Resume",
+                style: TextStyle(
+                  fontSize: 19,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black.withOpacity(0.5),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(
+          Icons.add,
+          color: Color(0xff674aef),
+          size: 30,
         ),
       ),
     );

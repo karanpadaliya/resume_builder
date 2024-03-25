@@ -1,15 +1,13 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
-class PersonalDetails extends StatefulWidget {
-  const PersonalDetails({super.key});
+class Eduction extends StatefulWidget {
+  const Eduction({super.key});
 
   @override
-  State<PersonalDetails> createState() => _PersonalDetailsState();
+  State<Eduction> createState() => _EductionState();
 }
 
-class _PersonalDetailsState extends State<PersonalDetails> {
+class _EductionState extends State<Eduction> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +15,7 @@ class _PersonalDetailsState extends State<PersonalDetails> {
         foregroundColor: Colors.white,
         backgroundColor: Color(0xff674aef),
         title: Text(
-          "Personal Details",
+          "Eduction",
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
@@ -47,7 +45,7 @@ class _PersonalDetailsState extends State<PersonalDetails> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "DOB",
+                        "Course/Degree",
                         style: TextStyle(
                           color: Color(0xff674aef),
                           fontSize: 17,
@@ -61,120 +59,19 @@ class _PersonalDetailsState extends State<PersonalDetails> {
                           decoration: InputDecoration(
                             border: OutlineInputBorder(
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(10))),
-                            hintText: "DD/MM/YYYY",
+                                BorderRadius.all(Radius.circular(10))),
+                            hintText: "B. Tech Information Technology",
                           ),
                         ),
                       ),
                       SizedBox(
-                        height: 20,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            child: Text(
-                              "Marital Status",
-                              style: TextStyle(
-                                color: Color(0xff674aef),
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15, top: 6),
-                            child: Container(
-                              child: Text(
-                                "Single",
-                                style: TextStyle(
-                                  color: Colors.black.withOpacity(0.6),
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15),
-                            child: Container(
-                              child: Text(
-                                "Married",
-                                style: TextStyle(
-                                  color: Colors.black.withOpacity(0.6),
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            child: Text(
-                              "Languages Known",
-                              style: TextStyle(
-                                color: Color(0xff674aef),
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15, top: 6),
-                            child: Container(
-                              child: Text(
-                                "English",
-                                style: TextStyle(
-                                  color: Colors.black.withOpacity(0.6),
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15),
-                            child: Container(
-                              child: Text(
-                                "Hindi",
-                                style: TextStyle(
-                                  color: Colors.black.withOpacity(0.6),
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15),
-                            child: Container(
-                              child: Text(
-                                "Gujarati",
-                                style: TextStyle(
-                                  color: Colors.black.withOpacity(0.6),
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20,
+                        height: 8,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Nationality",
+                            "School/College/Institute",
                             style: TextStyle(
                               color: Color(0xff674aef),
                               fontSize: 17,
@@ -188,8 +85,60 @@ class _PersonalDetailsState extends State<PersonalDetails> {
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(
                                     borderRadius:
-                                        BorderRadius.all(Radius.circular(10))),
-                                hintText: "Indian",
+                                    BorderRadius.all(Radius.circular(10))),
+                                hintText: "Marwadi University",
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 8,),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Percentage",
+                            style: TextStyle(
+                              color: Color(0xff674aef),
+                              fontSize: 17,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                                top: 13, left: 0, right: 15, bottom: 10),
+                            child: TextField(
+                              decoration: InputDecoration(
+                                border: OutlineInputBorder(
+                                    borderRadius:
+                                    BorderRadius.all(Radius.circular(10))),
+                                hintText: "70% (or) 7.0 CGPA",
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 8,),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Year Of Pass",
+                            style: TextStyle(
+                              color: Color(0xff674aef),
+                              fontSize: 17,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                                top: 13, left: 0, right: 15, bottom: 10),
+                            child: TextField(
+                              decoration: InputDecoration(
+                                border: OutlineInputBorder(
+                                    borderRadius:
+                                    BorderRadius.all(Radius.circular(10))),
+                                hintText: "2019",
                               ),
                             ),
                           ),
@@ -210,7 +159,7 @@ class _PersonalDetailsState extends State<PersonalDetails> {
                               ),
                               style: ButtonStyle(
                                 backgroundColor:
-                                    MaterialStatePropertyAll(Color(0xff674aef)),
+                                MaterialStatePropertyAll(Color(0xff674aef)),
                               ),
                             ),
                           ],
